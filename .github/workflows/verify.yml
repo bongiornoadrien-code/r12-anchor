@@ -1,0 +1,13 @@
+name: R12 Verify
+on: [push, pull_request]
+jobs:
+  build:
+       runs-on: ubuntu-latest
+       steps:
+         - uses: actions/checkout@v4
+         - name: Set up Rust
+           uses: dtolnay/rust-toolchain@stable
+         - name: Check locked
+           run: RUSTFLAGS="-D warnings" cargo check --locked
+         - name: Test locked
+           run: RUSTFLAGS="-D warnings" cargo test --locked
