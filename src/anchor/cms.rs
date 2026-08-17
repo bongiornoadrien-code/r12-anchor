@@ -8,3 +8,13 @@ impl CmsData {
         Self { version }
     }
 }
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_cms_new() {
+        let cms = CmsData::new(1);
+        assert_eq!(cms.version, 1);
+    }
+}
