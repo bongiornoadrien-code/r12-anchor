@@ -3,7 +3,6 @@ use std::fs::{self, File};
 use std::io::Write;
 use std::path::Path;
 use crate::athena::sandbox::OndePulsation;
-use crate::athena::types::FaceId;
 
 const CAPACITE_MAX_OMBRE: usize = 10_000; 
 
