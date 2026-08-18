@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 mod athena {
     pub mod types;
     pub mod sandbox;
