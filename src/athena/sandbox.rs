@@ -26,6 +26,7 @@ impl VirtualClock {
         };
     }
 
+    #[allow(dead_code)]
     pub fn phase(&self) -> PhaseCardiaque {
         self.phase
     }
